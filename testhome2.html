@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>New User Home, Matched</title>
+
+    <!-- link to the cyrilBridgeStyle.css sheet -->
+    <link rel="stylesheet" href="css/cyrilBridgeStyle.css" />
+    <link rel="stylesheet" href="css/lauracss.css" />
+
+    <!-- link to the Prompt google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link to the Google Material Symbols -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- Main content - everything above the navigation, including buttons-->
+    <div class="wrapper">
+      <header>
+        <h1>Hi, SmoothPixel!</h1>
+      </header>
+
+      <article>
+        <h2>This Week's Bridge Details</h2>
+        <p>
+          You are meeting with PerfectUnit!
+        </p>
+        <table>
+          <tr>
+            <td>
+              <span class="material-symbols-outlined">
+                calendar_today
+              </span>
+            </td>
+            <td>Thursday, 3:00-3:30pm</td>
+          </tr>
+          <!-- <tr>
+            <td>
+              <span class="material-symbols-outlined">
+                schedule
+              </span>
+            </td>
+            <td></td>
+          </tr> -->
+          <tr>
+            <td>
+              <span class="material-symbols-outlined">
+                map
+              </span>
+            </td>
+            <td>
+              Equidistant Neighborhood
+            </td>
+          </tr>
+        </table>
+      </article>
+      <!-- Put all buttons inside of the button container div  -->
+      <div class="homebuttoncontainer">
+        <!-- the div .button has all of the repeatable code for all buttons, while the .lightblue or .darkblue specify the background color -->
+        <div class="susan">
+          <a href="nuidentifier.html" class="homeiconbutton iconlink">
+            <span style="font-size: 2em;" class="material-symbols-outlined">
+              person_pin_circle
+            </span>
+          </a>
+          <span style="font-size: 0.65em;">Idenitfy </span>
+        </div>
+
+        <div class="susan">
+          <a href="https://www.google.com/maps" class="homeiconbutton iconlink">
+            <span style="font-size: 2em;" class="material-symbols-outlined">
+              map
+            </span>
+          </a>
+          <span style="font-size: 0.65em;">Location </span>
+        </div>
+        <div class="susan">
+          <a href="#" class="homeiconbutton iconlink">
+            <span style="font-size: 2em;" class="material-symbols-outlined">
+              edit_calendar
+            </span>
+          </a>
+          <span style="font-size: 0.65em;">Reschedule</span>
+        </div>
+        <div class="susan">
+          <a href="#" class="homeiconbutton iconlink">
+            <span style="font-size: 2em;" class="material-symbols-outlined">
+              star_half
+            </span>
+          </a>
+          <span style="font-size: 0.65em;">Feedback </span>
+        </div>
+      </div>
+      <div class="buttonContainer">
+        <h4>Make The Most of Bridge</h4>
+        <button type="button" class="collapsible">I matched, what now?</button>
+        <div class="icebreaker-content">
+          <p style="padding: 0 1.45em;">
+            <em>
+              Pick a location to meet! We've suggested a neighbourhood that is
+              between the two of you, but it's up to you to choose an exact
+              spot.
+            </em>
+          </p>
+        </div>
+        <button type="button" class="collapsible">
+          What happens if my coworker doesn't show?
+        </button>
+        <div class="activity-content">
+          <p style="padding: 0 1.45em;">
+            <em>
+              Ghosting is not ok. We’ll lock the chat, and we will follow up
+              with UserB. If this behavior continues, their account will be
+              frozen.
+            </em>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- //END main content -->
+
+    <!-- The footer contains the navigation -->
+    <footer>
+      <!-- The navigation is a flexbox row -->
+      <nav>
+        <!-- Home Icon -->
+        <a href="#" class="homeLink">
+          <span class="material-symbols-outlined"> home</span>
+        </a>
+        <!-- Chat Icon -->
+        <a href="nuchatlist.html" class="chatLink">
+          <span class="material-symbols-outlined">
+            chat_bubble
+          </span>
+        </a>
+        <!-- Settings Icon -->
+        <a href="settings.html" class="settingsLink">
+          <span class="material-symbols-outlined"> settings</span>
+        </a>
+      </nav>
+    </footer>
+    <!-- END the navigation -->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

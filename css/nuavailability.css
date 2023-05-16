@@ -1,0 +1,51 @@
+.calendar-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: center;
+  width: 20%;
+  padding: 10px;
+}
+
+th {
+  background-color: #cee5ff;
+  text-align: center;
+}
+
+th:first-child,
+td:first-child {
+  text-align: right;
+  font-weight: normal;
+  width: 10%;
+}
+
+td {
+  cursor: pointer;
+  height: 50px;
+}
+
+th:first-child {
+  text-align: center;
+}
+
+th:not(:first-child) {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.selected {
+  background-color: #0218be;
+}

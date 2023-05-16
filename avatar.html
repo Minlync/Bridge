@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pick Your Avatar</title>
+
+    <!-- link to the cyrilBridgeStyle.css sheet -->
+    <link rel="stylesheet" href="css/cyrilBridgeStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/avatar.css" />
+
+    <!-- link to the Prompt google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .image-container img {
+        height: 9.375em;
+        width: 9.375em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main content - everything above the navigation, including buttons-->
+    <div class="wrapper">
+      <header>
+        <h1>Pick Your Avatar</h1>
+      </header>
+
+      <article>
+        <p>
+          Select an image to represent you. Just like how we do not share your
+          real name, we do not share what you look like. No judging books by
+          their covers!
+        </p>
+      </article>
+      <div class="image-container">
+        <div class="avatar-grid">
+          <div class="avatar-box" onclick="selectAvatar(this)">
+            <img src="images/avatar1.jpg" alt="Avatar 1" />
+            <p>Avatar 1</p>
+          </div>
+          <div class="avatar-box" onclick="selectAvatar(this)">
+            <img src="images/avatar2.jpg" alt="Avatar 2" />
+            <p>Avatar 2</p>
+          </div>
+          <div class="avatar-box" onclick="selectAvatar(this)">
+            <img src="images/catAvatar.png" alt="Avatar 3" />
+            <p>Avatar 3</p>
+          </div>
+          <div class="avatar-box" onclick="selectAvatar(this)">
+            <img src="images/avatar4.jpg" alt="Avatar 4" />
+            <p>Avatar 4</p>
+          </div>
+          <div class="avatar-box" onclick="selectAvatar(this)">
+            <img src="images/avatar5.jpg" alt="Avatar 5" />
+            <p>Avatar 5</p>
+          </div>
+          <div class="avatar-box" onclick="selectAvatar(this)">
+            <img src="images/avatar6.jpg" alt="Avatar 6" />
+            <p>Avatar 6</p>
+          </div>
+          <div class="avatar-box" onclick="selectAvatar(this)">
+            <img src="images/avatar7.jpg" alt="Avatar 7" />
+            <p>Avatar 7</p>
+          </div>
+          <div class="avatar-box" onclick="selectAvatar(this)">
+            <img src="images/avatar8.jpg" alt="Avatar 8" />
+            <p>Avatar 8</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Put all buttons inside of the button container div  -->
+
+      <div class="buttoncontainer">
+        <a href="hobbies.html" class="button darkblue avatarbutton">Continue</a>
+      </div>
+    </div>
+    <script src="avatar.js"></script>
+  </body>
+</html>

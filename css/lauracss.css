@@ -1,0 +1,275 @@
+/* Below is the Range Slider code. */
+/* Use it on location.html and settings.html */
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0.3125em; /* 5 px / 16 px font height = 0.3125em */
+  border-radius: 5vh;
+  border: none;
+  background: #cee5ff;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5625em;
+  height: 1.5625em;
+  border-radius: 50%;
+  background: #0218be;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 1.5625em;
+  height: 1.5625em;
+  border-radius: 50%;
+  background: #0218be;
+  cursor: pointer;
+}
+/* END range slider */
+
+/* Below is the code for the icon buttons on the Homepage */
+.info {
+}
+.homebuttoncontainer {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  /* margin-top: auto; */
+}
+
+.homeiconbutton {
+  border: none;
+  background-color: #ebf4ff;
+  /*f3f8fd */
+  text-decoration: none;
+  text-align: center;
+  /* display: inline-block; */
+  margin: 0.9375em 0em 0em 0em; /* 15 px / 16 px font size = 0.9375 em */
+  cursor: pointer;
+  border-radius: 0.5em; /* 50 px / 16 px font size = 3.125em */
+  /* width: 120%; */
+  display: block;
+  padding: 1.2em; /*15 px / 16 px font size = 0.9375 em*/
+  /* margin-bottom: 0; */
+  padding-bottom: 0.6em;
+}
+
+/* applies color to all of the icons used on the homepage */
+.iconlink {
+  color: #0218be;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48;
+}
+
+td,
+th {
+  vertical-align: top;
+  text-align: left;
+}
+.homeimagecontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.susan {
+  text-align: center;
+}
+/* .hometextcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+} */
+.homeimage {
+  border: 0.125em solid #cee5ff;
+  border-radius: 15vh;
+  width: 70.23787226072%;
+  height: auto;
+}
+
+/* Homepage toggle hide/show descriptions */
+
+#identifier {
+  display: none;
+  width: 80%;
+  padding: 1.875em; /* 20/16 = 0.7692307692 */
+  background-color: #f1f1f1;
+  border-radius: 0.3125em;
+  margin-top: 0.83em;
+}
+#location {
+  display: none;
+  width: 80%;
+  padding: 1.875em; /* 20/16 = 0.7692307692 */
+  background-color: #f1f1f1;
+  border-radius: 0.3125em;
+  margin-top: 0.83em;
+}
+#reschedule {
+  display: none;
+  width: 80%;
+  padding: 1.875em; /* 20/16 = 0.7692307692 */
+  background-color: #f1f1f1;
+  border-radius: 0.3125em;
+  margin-top: 0.83em;
+}
+#feedback {
+  display: none;
+  width: 80%;
+  padding: 1.875em; /* 20/16 = 0.7692307692 */
+  background-color: #f1f1f1;
+  border-radius: 0.3125em;
+  margin-top: 0.83em;
+}
+
+/* END homepage */
+/* SETTINGS.html page */
+/* on off slider */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3.75em;
+  height: 2.125em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider-notif {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cee5ff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider-notif:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider-notif {
+  background-color: #0218be;
+}
+
+input:focus + .slider-notif {
+  box-shadow: 0 0 1px #0218be;
+}
+
+input:checked + .slider-notif:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider-notif.round {
+  border-radius: 34px;
+}
+
+.slider-notif.round:before {
+  border-radius: 50%;
+}
+/* END settings */
+/* Popup for match alert */
+
+/* .overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+} */
+
+.popup {
+  background-color: #ebf4ff;
+  border: solid #0218be;
+  width: 70%;
+  padding: 1.875em 2.5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  display: none;
+  text-align: center;
+}
+
+/* END popup */
+/* Icebreaker page */
+.collapsible {
+  background-color: #ebf4ff;
+  color: #0218be;
+  font-family: "Prompt", sans-serif;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: solid #cee5ff;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #cee5ff;
+}
+.collapsible:after {
+  content: "\002B";
+  color: #0218be;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.icebreaker-content {
+  padding: 0 1.125em;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.activity-content {
+  padding: 0 1.125em;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+/* END icebreaker */

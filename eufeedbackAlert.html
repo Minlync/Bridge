@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Existing User Feedback, Alert</title>
+
+    <!-- link to the bridgeStyle.css sheet -->
+    <link rel="stylesheet" href="css/cyrilBridgeStyle.css" />
+    <!-- link to the bridgeStyle.css sheet -->
+    <link rel="stylesheet" href="css/evelyncss.css" />
+
+    <!-- link to the Prompt google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .alert {
+        padding: 0.625em 1.25em 0.3125em 1.25em;
+        background-color: #93c5ff;
+        color: white;
+        font-size: 1em;
+      }
+
+      .closebtn {
+        margin-left: 0.9375em;
+        color: white;
+        /* padding: 0px; */
+        float: right;
+        font-size: 1.875em;
+        line-height: 0.7em;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="alert">
+        <span
+          class="closebtn"
+          onclick="this.parentElement.style.display='none';"
+          >&times;</span
+        >
+        <strong>Saved</strong>
+      </div>
+      <header>
+        <div class="top">
+          <h1>
+            Feedback
+          </h1>
+          <h2>
+            How was the meeting?
+          </h2>
+          Did you and Perfect Unit successfully meet? We track no-shows.
+          <p></p>
+        </div>
+      </header>
+      <div class="flex-container">
+        <div class="row">
+          <div class="bubble">
+            Yes
+          </div>
+        </div>
+        <div class="row">
+          <div class="bubble">No</div>
+        </div>
+      </div>
+
+      <header>
+        <div class="top">
+          <h2>
+            Would you meet again?
+          </h2>
+          If yes, the chat will remain open. You two acquaintances can take it
+          from there!
+          <p></p>
+        </div>
+      </header>
+      <div class="flex-container">
+        <div class="row">
+          <div class="bubble">
+            Yes
+          </div>
+        </div>
+        <div class="row">
+          <div class="bubble">No</div>
+        </div>
+      </div>
+
+      <div class="buttonContainer">
+        <a href="euhomenomatch.html" class="button darkblue">Submit Feedback</a>
+        <!-- <a href="#" button class="button darkblue">Continue</a> -->
+      </div>
+    </div>
+    <script src="hobbies.js"></script>
+  </body>
+</html>

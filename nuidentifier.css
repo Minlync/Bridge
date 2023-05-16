@@ -1,0 +1,30 @@
+html {
+  background-color: #00bfff;
+}
+
+body {
+  margin: 0;
+  font-family
+}
+.close-button {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  color: #0218be;
+  cursor: pointer;
+  font-size: 24px;
+  height: 30px;
+  /* position: absolute; */
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  text-decoration: none;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+.close-button:hover {
+  background-color: blue;
+  color: white;
+}

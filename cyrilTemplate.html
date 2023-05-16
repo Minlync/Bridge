@@ -1,0 +1,84 @@
+<!-- Coded by Laura Newson -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>This is a Template Page</title>
+
+    <!-- link to the cyrilBridgeStyle.css sheet -->
+    <link rel="stylesheet" href="css/cyrilBridgeStyle.css" />
+
+    <!-- link to the Prompt google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link to the Google home icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- link to the Google chat icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- link to the Google settings icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- Main content - everything above the navigation, including buttons-->
+    <div class="wrapper">
+      <header>
+        <h1>I am a Header</h1>
+      </header>
+
+      <article>
+        <p>I am subheader instructions</p>
+
+        <form>
+          <label for="wemail">I am the heading for the form</label><br />
+          <input type="text" id="wemail" name="wemail" value="" /><br /><br />
+        </form>
+      </article>
+      <!-- Put all buttons inside of the button container div  -->
+      <div class="buttonContainer">
+        <!-- the div .button has all of the repeatable code for all buttons, while the .lightblue or .darkblue specify the background color -->
+        <a href="username2.html" class="button lightblue"
+          >I am a light blue button</a
+        >
+        <a href="#" class="button darkblue">I am a dark blue button</a>
+      </div>
+    </div>
+    <!-- //END main content -->
+
+    <!-- The footer contains the navigation -->
+    <footer>
+      <!-- The navigation is a flexbox row -->
+      <nav>
+        <!-- Home Icon -->
+        <a href="#" class="homeLink">
+          <span class="material-symbols-outlined"> home</span>
+        </a>
+        <!-- Chat Icon -->
+        <a href="#" class="chatLink">
+          <span class="material-symbols-outlined"> chat_bubble</span>
+        </a>
+        <!-- Settings Icon -->
+        <a href="#" class="settingsLink">
+          <span class="material-symbols-outlined"> settings</span>
+        </a>
+      </nav>
+    </footer>
+    <!-- END the navigation -->
+  </body>
+</html>

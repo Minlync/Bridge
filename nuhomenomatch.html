@@ -1,0 +1,246 @@
+<!-- Coded by Laura Newson -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>New User Home, No Match</title>
+
+    <!-- link to the cyrilBridgeStyle.css sheet -->
+    <link rel="stylesheet" href="css/cyrilBridgeStyle.css" />
+    <link rel="stylesheet" href="css/lauracss.css" />
+
+    <!-- link to the Prompt google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link to the Google Material Symbols -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      /* style for navigation bar */
+      .homeLink {
+        color: #93c5ff;
+      }
+      .chatLink {
+        color: #ffffff;
+      }
+      .settingsLink {
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main content - everything above the navigation, including buttons-->
+    <div class="wrapper">
+      <header>
+        <h1>Hi, SmoothPixel!</h1>
+      </header>
+
+      <article>
+        <h3>This Week's Bridge Details</h3>
+        <p>
+          We're still working to find a coworker for you to meet with. We will
+          notify you when we do!
+        </p>
+      </article>
+
+      <!-- Put all buttons inside of the button container div  -->
+      <div class="homebuttoncontainer">
+        <!-- the div .button has all of the repeatable code for all buttons, while the .lightblue or .darkblue specify the background color -->
+
+        <div class="susan">
+          <!-- <button  class="homeiconbutton iconlink"> -->
+          <a
+            onclick="revealInfoArea('identifier')"
+            href="#"
+            class="homeiconbutton iconlink"
+          >
+            <span style="font-size: 2em;" class="material-symbols-outlined">
+              person_pin_circle
+            </span>
+          </a>
+          <!-- </button> -->
+          <span style="font-size: 0.65em;">Idenitfy </span>
+        </div>
+
+        <div class="susan">
+          <a
+            onclick="revealInfoArea('location')"
+            href="#"
+            class="homeiconbutton iconlink"
+          >
+            <!-- onclick="toggleLocation()" -->
+            <span style="font-size: 2em;" class="material-symbols-outlined">
+              map
+            </span>
+          </a>
+          <span style="font-size: 0.65em;">Location </span>
+        </div>
+        <div class="susan">
+          <a
+            onclick="revealInfoArea('reschedule')"
+            href="#"
+            class="homeiconbutton iconlink"
+          >
+            <span style="font-size: 2em;" class="material-symbols-outlined">
+              edit_calendar
+            </span>
+          </a>
+          <span style="font-size: 0.65em;">Reschedule</span>
+        </div>
+        <div class="susan">
+          <a
+            onclick="revealInfoArea('feedback')"
+            href="#"
+            class="homeiconbutton iconlink"
+          >
+            <span style="font-size: 2em;" class="material-symbols-outlined">
+              star_half
+            </span>
+          </a>
+          <span style="font-size: 0.65em;">Feedback </span>
+        </div>
+      </div>
+      <!-- <div class="explanation"> -->
+      <div id="identifier" class="info">
+        Use the Identify feature to find your coworker when you are at the
+        in-person meeting point.
+        <a href="nuidentifier.html" class="button darkblue"
+          >Identify Each Other</a
+        >
+      </div>
+      <div id="location" class="info">
+        We will suggest a neighborhood that is equidistant to you and your
+        coworker. Chat to agree on an exact location.
+        <a href="#" class="button darkblue">See Equidistant Neighborhood</a>
+      </div>
+      <div id="reschedule" class="info">
+        If you need to reschedule this week's Bridge meeting, please message
+        your coworker as soon as possible to arrange a new meeting time.
+        <a href="nu-chat-reschedule.html" class="button darkblue"
+          >Chat to Reschedule</a
+        >
+      </div>
+      <div id="feedback" class="info">
+        You can give feedback on how your Bridge meeting went after you have met
+        in person. Make sure you log that you have met using the identify
+        feature.
+        <a href="nujustmatchedfeedback.html" class="button darkblue"
+          >Give Feedback</a
+        >
+      </div>
+      <!-- Popup - you've been matched -->
+
+      <div class="popup">
+        <h2>Hey, look who you've connected with!</h2>
+        <div class="avatar">
+          <img
+            src="images/avatarforchat.png"
+            alt="Avatar 6"
+            style="
+              width: 30%;
+              height: auto;
+              border: 0.1875em solid lightgrey;
+              border-radius: 55vh;
+            "
+          />
+
+          <img
+            src="/images/catSettings.png"
+            alt="cartoon orange cat with brown stripes and a pink nose. The cat is outlined in black on a white background."
+            style="
+              width: 30%;
+              height: auto;
+              border: 0.1875em solid #0218be;
+              border-radius: 55vh;
+            "
+          />
+        </div>
+        <p>
+          Based on both of your availability, you're scheduled to meet
+          <strong>Thursday at 3:00pm for 30 minutes in Williamsburg</strong>.
+          Chat to plan the exact meeting spot.
+        </p>
+        <!-- <div class="buttonContainer"> -->
+        <!-- the div .button has all of the repeatable code for all buttons, while the .lightblue or .darkblue specify the background color -->
+        <a href="nu-chat-justmatched2.html" class="button darkblue"
+          >Let's chat</a
+        >
+        <!-- </div> -->
+      </div>
+
+      <!--Script-->
+      <script type="text/javascript">
+        window.addEventListener("load", function () {
+          setTimeout(function open(event) {
+            document.querySelector(".popup, .overlay").style.display = "block";
+          }, 2500);
+        });
+
+        // document.querySelector("#close").addEventListener("click", function () {
+        //   document.querySelector(".popup").style.display = "none";
+        // });
+        function on() {
+          document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+          document.getElementById("overlay").style.display = "none";
+        }
+
+        function revealInfoArea(infoAreaID) {
+          //hide all the info areas before revealing the one we want
+          var allInfoDivs = document.getElementsByClassName("info");
+          var divClicked = document.getElementById(infoAreaID);
+
+          if (divClicked.style.display === "block") {
+            divClicked.style.display = "none";
+          } else {
+            divClicked.style.display = "block";
+          }
+
+          for (var i = 0; i < allInfoDivs.length; i++) {
+            if (divClicked != allInfoDivs[i]) {
+              allInfoDivs[i].style.display = "none";
+            }
+          }
+        }
+        // Get the <body> element
+        const body = document.querySelector("body");
+
+        // Set the height of the <body> element to "auto"
+        body.style.height = "auto";
+      </script>
+      <!-- END pop-up -->
+    </div>
+    <!-- //END main content -->
+
+    <!-- The footer contains the navigation -->
+    <footer>
+      <!-- The navigation is a flexbox row -->
+      <nav>
+        <!-- Home Icon -->
+        <a href="#" class="homeLink">
+          <span class="material-symbols-outlined"> home</span>
+        </a>
+        <!-- Chat Icon -->
+        <a href="nuchatlist.html" class="chatLink">
+          <span class="material-symbols-outlined"> chat_bubble</span>
+        </a>
+        <!-- Settings Icon -->
+        <a href="nusettings.html" class="settingsLink">
+          <span class="material-symbols-outlined"> settings</span>
+        </a>
+      </nav>
+    </footer>
+    <!-- END the navigation -->
+  </body>
+</html>
